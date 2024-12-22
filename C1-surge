@@ -6,5 +6,5 @@ DOMAIN-SUFFIX,ecm.capitalone.com,PROXY
 DOMAIN-SUFFIX,m.capitalone.com,PROXY
 DOMAIN-SUFFIX,potomac-clickstream.capitalone.com,PROXY
 DOMAIN-SUFFIX,capitalone360.com
-collector.newrelic.com
+DOMAIN-SUFFIX,collector.newrelic.com
 DOMAIN-SUFFIX,insights-collector.newrelic.com

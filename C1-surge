@@ -1,11 +1,4 @@
-DOMAIN-SUFFIX,potomac-clickstream.capitalone.com
-DOMAIN-SUFFIX,capitalone.md-apis.medallia.com
-DOMAIN-SUFFIX,capitalone-resources.digital-cloud.medallia.com
+C1分流规则集
 DOMAIN-SUFFIX,capitalone.com
-DOMAIN-SUFFIX,ecm.capitalone.com
-DOMAIN-SUFFIX,m.capitalone.com
-DOMAIN-SUFFIX,potomac-clickstream.capitalone.com
 DOMAIN-SUFFIX,capitalone360.com
 DOMAIN-SUFFIX,collector.newrelic.com
-DOMAIN-SUFFIX,insights-collector.newrelic.com
-DOMAIN-SUFFIX,mobile-collector.newrelic.com

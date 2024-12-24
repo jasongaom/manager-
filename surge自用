@@ -19,7 +19,6 @@ DIRECT = direct
 🇸🇬 Netflix = select, 🐟 final, policy-path=your.surge.list.here, update-interval=0, no-alert=0, hidden=0, policy-regex-filter=美国|台湾
 🐭 Disney+ = select, 🐟 final, DIRECT, ♻️ 故障切换, no-alert=0, hidden=0
 🎵 TikTok = select, 🐟 final, DIRECT, ♻️ 故障切换, no-alert=0, hidden=0
-🐱 哔哩哔哩台湾 = select, 🐟 final, DIRECT, ♻️ 故障切换, no-alert=0, hidden=0
 ✈️ 电报信息 = select, "🎯 节点选择", "🇭🇰 香港节点", "🇺🇸 美国节点", "🇯🇵 日本节点", "🇨🇳 台湾节点", "🇸🇬 新加坡节点", icon-url=https://raw.githubusercontent.com/midori01/surge/main/icons/img/shadowsocks.png
 🎵spotify = select, "🇭🇰 香港节点", "🇨🇳 台湾节点", "🇺🇸 美国节点", "🇯🇵 日本节点", "🇸🇬 新加坡节点", "🇩🇪 德国节点", "🇬🇧 英国节点", "🇰🇷 韩国节点", "🇫🇷 法国节点", "🇳🇱 荷兰节点", "🇮🇳 印度节点", "🇹🇷 土耳其节点", "🚀 我的节点", "⏳️ ALL", 埃及节点, 🇳🇬尼日利亚, 菲律宾节点
 📺YouTube = select, "🎯 节点选择", "🇭🇰 香港节点", "🇨🇳 台湾节点", "🇺🇸 美国节点", "🇯🇵 日本节点", "🇸🇬 新加坡节点", "🇩🇪 德国节点", "🇬🇧 英国节点", "🇰🇷 韩国节点", "🇫🇷 法国节点", "🇳🇱 荷兰节点", "🇮🇳 印度节点", "🇹🇷 土耳其节点", "🚀 我的节点"
@@ -52,7 +51,6 @@ RULE-SET,https://raw.githubusercontent.com/limbopro/Profiles4limbo/main/AI_Platf
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Netflix/Netflix.list,🇸🇬 Netflix
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Disney/Disney.list,🐭 Disney+
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/TikTok/TikTok.list,🎵 TikTok 
-RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/BiliBiliIntl/BiliBiliIntl.list,🐱 哔哩哔哩台湾
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Apple/Apple.list,🍎 苹果服务
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Microsoft/Microsoft.list,Ⓜ️ 微软服务
 # > 交易所ip

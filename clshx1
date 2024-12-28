@@ -1,0 +1,156 @@
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: Rule
+log-level: info
+external-controller: 127.0.0.1:9090
+secret: ""
+
+proxies:
+  - name: "DIRECT"
+    type: builtin
+    builtin-type: direct
+
+proxy-groups:
+  - name: "🛑 广告拦截"
+    type: select
+    proxies:
+      - "REJECT"
+      - "DIRECT"
+  - name: "✈️ 机场专线"
+    type: select
+    proxies:
+      - "🐟 final"
+      - "♻️ 故障切换"
+      - "DIRECT"
+  - name: "🍎 苹果服务"
+    type: select
+    proxies:
+      - "🐟 final"
+      - "DIRECT"
+      - "♻️ 故障切换"
+  - name: "Ⓜ️ 微软服务"
+    type: select
+    proxies:
+      - "🐟 final"
+      - "DIRECT"
+  - name: "🤖 AI Platforms"
+    type: select
+    proxies:
+      - "🐟 final"
+      - "DIRECT"
+      - "♻️ 故障切换"
+  - name: "🇸🇬 Netflix"
+    type: select
+    proxies:
+      - "🐟 final"
+      - "DIRECT"
+  - name: "🐭 Disney+"
+    type: select
+    proxies:
+      - "🐟 final"
+      - "DIRECT"
+      - "♻️ 故障切换"
+  - name: "🎵 TikTok"
+    type: select
+    proxies:
+      - "🐟 final"
+      - "DIRECT"
+      - "♻️ 故障切换"
+  - name: "✈️ 电报信息"
+    type: select
+    proxies:
+      - "🐟 final"
+      - "🇭🇰 香港节点"
+      - "🇺🇸 美国节点"
+      - "🇯🇵 日本节点"
+      - "🇨🇳 台湾节点"
+      - "🇸🇬 新加坡节点"
+  - name: "🎵spotify"
+    type: select
+    proxies:
+      - "🇭🇰 香港节点"
+      - "🇨🇳 台湾节点"
+      - "🇺🇸 美国节点"
+      - "🇯🇵 日本节点"
+      - "🇸🇬 新加坡节点"
+      - "🇩🇪 德国节点"
+      - "🇬🇧 英国节点"
+      - "🇰🇷 韩国节点"
+      - "🇫🇷 法国节点"
+      - "🇳🇱 荷兰节点"
+      - "🇮🇳 印度节点"
+      - "🇹🇷 土耳其节点"
+      - "🐟 final"
+      - "埃及节点"
+      - "🇳🇬尼日利亚"
+      - "菲律宾节点"
+  - name: "📺YouTube"
+    type: select
+    proxies:
+      - "🐟 final"
+      - "🇭🇰 香港节点"
+      - "🇨🇳 台湾节点"
+      - "🇺🇸 美国节点"
+      - "🇯🇵 日本节点"
+      - "🇸🇬 新加坡节点"
+      - "🇩🇪 德国节点"
+      - "🇬🇧 英国节点"
+      - "🇰🇷 韩国节点"
+      - "🇫🇷 法国节点"
+      - "🇳🇱 荷兰节点"
+      - "🇮🇳 印度节点"
+      - "🇹🇷 土耳其节点"
+  - name: "🎵YTBmusic"
+    type: select
+    proxies:
+      - "🇭🇰 香港节点"
+      - "🇨🇳 台湾节点"
+      - "🇺🇸 美国节点"
+      - "🇯🇵 日本节点"
+      - "🇸🇬 新加坡节点"
+      - "🇩🇪 德国节点"
+      - "🇬🇧 英国节点"
+      - "🇰🇷 韩国节点"
+      - "🇫🇷 法国节点"
+      - "🇳🇱 荷兰节点"
+      - "🇮🇳 印度节点"
+      - "🇹🇷 土耳其节点"
+  - name: "📺HBOMax"
+    type: select
+    proxies:
+      - "🇭🇰 香港节点"
+      - "🇨🇳 台湾节点"
+      - "🇺🇸 美国节点"
+      - "🇯🇵 日本节点"
+      - "🇸🇬 新加坡节点"
+      - "🇩🇪 德国节点"
+      - "🇬🇧 英国节点"
+      - "🇰🇷 韩国节点"
+      - "🇫🇷 法国节点"
+      - "🇳🇱 荷兰节点"
+      - "🇮🇳 印度节点"
+      - "🇹🇷 土耳其节点"
+      - "菲律宾节点"
+  - name: "PayPal"
+    type: select
+    proxies:
+      - "🇭🇰 香港节点"
+      - "🇨🇳 台湾节点"
+      - "🇺🇸 美国节点"
+      - "🇯🇵 日本节点"
+      - "🇸🇬 新加坡节点"
+      - "🇩🇪 德国节点"
+      - "🇬🇧 英国节点"
+      - "🇰🇷 韩国节点"
+      - "🇫🇷 法国节点"
+      - "🇳🇱 荷兰节点"
+      - "🇮🇳 印度节点"
+      - "🇹🇷 土耳其节点"
+
+rules:
+  - DOMAIN-SUFFIX,equifax.com,🇺🇸 美国节点
+  - DOMAIN-SUFFIX,bonify.de,🇩🇪 德国节点
+  - DOMAIN-SUFFIX,myfin.bg,🇬🇧 英国节点
+  - GEOIP,CN,DIRECT
+  - MATCH,🐟 final
